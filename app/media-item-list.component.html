@@ -1,0 +1,14 @@
+<section>
+  <mw-media-item
+    *ngFor="let mediaItem of mediaItems"
+    [mediaItem]="mediaItem"
+    (preview)="onMediaItemPreview($event)">
+  </mw-media-item>
+  <mw-popup
+    
+    [mediaItem]="selectedItem"
+    (close)="onClosePreview()">
+  </mw-popup>
+</section>
+<!--[ngClass]="{'medium-movies': mediaItem.medium==='Movies', 'medium-series':mediaItem.medium==='Series'}"-->
+<!--[daftar]="mediaItems"-->

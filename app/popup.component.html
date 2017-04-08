@@ -1,0 +1,10 @@
+<div [hidden]="isVisible()" id="popup">
+    <input type="submit" (click)="setVisibility()" value="X"/>
+    <h2>{{ mediaItem ? mediaItem.name : "" }}</h2>
+    <div>Watched on {{ mediaItem ? mediaItem.watchedOn : "" }}</div>
+    <div>{{ mediaItem ? mediaItem.category : "" }}</div>
+    <div>{{ mediaItem ? mediaItem.year : "" }}</div>
+    <div (click)="geserSebelum()"><img src="media/001-back.png"/></div>
+    <div *ngFor="let pilihgm of images"><img [src]="pilihgm.url" *ngIf="pilihgm.id === index" emphasizeImg class="img-smaller"/></div>
+    <div (click)="geserSesudah()"><img src="media/002-next.png"/></div>
+</div>

@@ -1,0 +1,37 @@
+#popup {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    left: 600px;
+    top: 100px;
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: #29394b;
+    padding: 10px;
+    color: #bdc2c5;
+}
+
+h2 {
+  font-size: 1.6em;
+  flex: 1;
+}
+
+input {
+  float: right;
+  cursor: pointer;
+}
+
+img {
+  float: left;
+  cursor: pointer;
+}
+
+.img-smaller {
+  height: 32px;
+  width: 32px;
+}
+
+.img-larger {
+  height: 64px;
+  width: 64px;
+}
