@@ -10,7 +10,7 @@ export class PopupComponent {
   @Output() preview = new EventEmitter();
   @Output() close = new EventEmitter();
 
-  index = 1;
+  imgIndex = 1;
   images=[
     {id: 1,
     url: "media/01.png"},
@@ -34,15 +34,15 @@ export class PopupComponent {
     this.close.emit(this.mediaItem);
   }
 
-  geserSebelum() {
-    if (this.index > 1) {
-      this.index -= 1;
+  slidePrev() {
+    if (this.imgIndex > 1) {
+      this.imgIndex -= 1;
     }
   }
 
-  geserSesudah() {
-    if (this.index < this.images.length) {
-      this.index += 1;
+  slideNext() {
+    if (this.imgIndex < this.images.length) {
+      this.imgIndex += 1;
     }
   }
 }

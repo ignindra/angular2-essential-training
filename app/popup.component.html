@@ -4,7 +4,7 @@
     <div>Watched on {{ mediaItem ? mediaItem.watchedOn : "" }}</div>
     <div>{{ mediaItem ? mediaItem.category : "" }}</div>
     <div>{{ mediaItem ? mediaItem.year : "" }}</div>
-    <div (click)="geserSebelum()"><img src="media/001-back.png"/></div>
-    <div *ngFor="let pilihgm of images"><img [src]="pilihgm.url" *ngIf="pilihgm.id === index" emphasizeImg class="img-smaller"/></div>
-    <div (click)="geserSesudah()"><img src="media/002-next.png"/></div>
+    <div (click)="slidePrev()"><img src="media/001-back.png"/></div>
+    <div *ngFor="let imgChoice of images"><img [src]="imgChoice.url" *ngIf="imgChoice.id === imgIndex" emphasizeImg class="img-smaller"/></div>
+    <div (click)="slideNext()"><img src="media/002-next.png"/></div>
 </div>

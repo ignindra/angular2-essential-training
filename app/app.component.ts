@@ -6,13 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['app/app.component.css']
 })
 export class AppComponent {
-  // selectedItem = null;
-
-  // onMediaItemPreview(mediaItem){
-  //   this.selectedItem = mediaItem;
-  // }
-
-  // onClosePreview() {
-  //   this.selectedItem = null;
-  // }
 }
